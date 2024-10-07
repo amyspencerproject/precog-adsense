@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precog Source UI</title>
+    <link rel="stylesheet" type="text.css" href="./scss/_normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/fonts.css" />
+    <link rel="stylesheet" href="./scss/fontawesome-all.css" />
+    <link rel="stylesheet" href="./scss/google.css" />
+  </head>
+  <body>
+    <div class="Page">
+      <div class="PipelineCreatePage">
+        <div class="Container"><h1>Connect to Google AdSense</h1></div>
+        <div class="Container">
+          <div class="SourceAdd">
+            <div class="Group">
+              <button class="Button" type="button">
+                <i class="Icon fas fa-arrow-left"></i>Back
+              </button>
+            </div>
+                <label class="Field"
+                  ><div class="Field-label">Name</div>
+                  <div class="Field-description">
+                    <p>Name of this connection in Precog.</p>
+                  </div>
+                  <input class="Input" type="text" placeholder="" /></label
+                ><label class="Field"
+                  >
+                  <div class="Field-label">Publisher Id</div>
+                  <div class="Field-description">
+                    <p>You can find your Publisher Id in your Google AdSense account 
+                      by clicking on the <i class="fa fa-cog"></i> Admin option in the 
+                      left navigation panel. Under Settings click on Account information. 
+                      Your Publisher Id will be listed at the top. Copy and paste the 
+                      entire Property Id below, e.g. pub-6113413356722810.
+                    </p>
+                  </div>
+                  <input class="Input" type="text" placeholder="" /></label
+                ><label class="Field"
+                    ><div class="Field-label">Start Date</div>
+                    <div class="Field-description">
+                      <p>Start Date in the format YYYY-MM-DD e.g. 2024-10-01.</p>
+                    </div>
+                    <input class="Input" type="text" placeholder=""
+                  /></label>
+                <label class="Field"
+                  ><div class="Field-label">Client Id (optional)</div>
+                  <div class="Field-description">
+                    <p>
+                      Using your own developer credentials is optional and not
+                      recommended for a typical Precog customer. If you choose
+                      this option you will need a Client ID and Client Secret.
+                      Enable the
+                      <a
+                        href="https://console.cloud.google.com/apis/library/adsense.googleapis.com"
+                        >Google AdSense API</a
+                      >
+                      in your Google Cloud console. In the API and Services
+                      Product section, click on + Create Credentials and then
+                      OAuth Client ID. Select Web Application. Name the Web
+                      Client ‘precog’ and add https://precog.cloud (or
+                      https://eu.precog.cloud if required by GDPR) as the
+                      Authorized redirect URI. Click the Create button. Copy the
+                      Client ID and Client Secret in the fields below.
+                    </p>
+                  </div>
+                  <input class="Input" type="text" placeholder=""
+                /></label>
+                <label class="Field"
+                  ><div class="Field-label">Client Secret (optional)</div>
+                  <div class="Field-description">
+                    <p>Using your own developer Client Secret is optional.</p>
+                  </div>
+                  <input class="Input" type="text" placeholder=""
+                /></label>
+                
+              </div>
+              <div class="Group">
+                <div class="ButtonGroup">
+                  <button class="gsi-material-button" type="button">
+                    <div class="gsi-material-button-state"></div>
+                    <div class="gsi-material-button-content-wrapper">
+                      <div class="gsi-material-button-icon">
+                        <img src="img/google.svg" />
+                      </div>
+                      <span class="gsi-material-button-contents"
+                        >Continue with Google</span
+                      >
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
